@@ -24,8 +24,11 @@
     "url": "https://github.com/vladimir-vovk/expo-bare-typescript/issues"
   },
   "dependencies": {
+    "@expo-google-fonts/poppins": "^0.2.2",
     "@types/styled-components-react-native": "^5.1.3",
     "expo": "~44.0.2",
+    "expo-app-loading": "~1.3.0",
+    "expo-font": "~10.0.4",
     "expo-splash-screen": "~0.14.1",
     "expo-status-bar": "~1.2.0",
     "react": "17.0.1",
