@@ -7,5 +7,8 @@ export const Container = styled.View`
   background-color: ${({ theme }) => theme.colors.primary};
 `;
 export const Text = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.bold};
   color: ${({ theme }) => theme.colors.text};
+  font-size: 24px;
+  font-weight: bold;
 `;
