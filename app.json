@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "agest",
+    "slug": "agest",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "expo-bare-typescript"
+}
