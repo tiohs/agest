@@ -7,5 +7,5 @@ export const Container = styled.View`
   background-color: ${({ theme }) => theme.colors.primary};
 `;
 export const Text = styled.Text`
-  color: #fff;
+  color: ${({ theme }) => theme.colors.text};
 `;
