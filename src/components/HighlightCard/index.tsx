@@ -2,16 +2,16 @@ import React from 'react';
 
 import { Container, Header, Title, Icon, Footer, Amount, LastTransaction } from './styled';
 
-export function HighlightCard() {
+export function HighlightCard({ type, title, amount, lastTransactions }) {
   return (
     <Container>
       <Header>
-        <Title>Entrada</Title>
-        <Icon name="arrow-up-circle" />
+        <Title>{title}</Title>
+        <Icon name={type !== 'dollar-sign' ? 'arrow-' + type + '-circle' : 'dollar-sign'} />
       </Header>
       <Footer>
-        <Amount>R$ 17.400,00</Amount>
-        <LastTransaction>Última entrada dia 13 de abril</LastTransaction>
+        <Amount>{amount}</Amount>
+        <LastTransaction>{lastTransactions}</LastTransaction>
       </Footer>
     </Container>
   );
