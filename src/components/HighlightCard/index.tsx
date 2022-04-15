@@ -1,5 +1,4 @@
 import React from 'react';
-import { View, Text } from 'react-native';
 
 import { Container, Header, Title, Icon, Footer, Amount, LastTransaction } from './styled';
 
