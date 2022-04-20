@@ -20,6 +20,9 @@ export const Title = styled.Text`
 `;
 
 export const Amount = styled.Text<TransactionProps>`
+  color: ${({ theme, type }) =>
+    type === 'positive' ? theme.colors.success : theme.colors.attention};
+
   font-family: ${({ theme }) => theme.fonts.regular};
   font-size: ${RFValue(20)}px;
   margin-top: 2px;
