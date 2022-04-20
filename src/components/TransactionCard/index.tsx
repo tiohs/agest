@@ -2,10 +2,26 @@ import React from 'react';
 
 import { Container, Title, Amount, Footer, Category, Icon, CategoryName, Date } from './styled';
 
-export function TransactionCard() {
+interface CategoryProps {
+  name: string;
+  icon: string;
+}
+interface Data {
+  type: 'positive' | 'negative';
+  title: string;
+  amount: string;
+  category: CategoryProps;
+  date: string;
+}
+
+interface Props {
+  data: Data;
+}
+
+export function TransactionCard({ data }: Props) {
   return (
     <Container>
-      <Title>Desenvolvimento de site</Title>
+      <Title>{data.title}</Title>
       <Amount>R$ 12.000,00</Amount>
       <Footer>
         <Category>
