@@ -31,7 +31,7 @@ const data = [
     date: '13/04/2020'
   },
   {
-    type: 'positive',
+    type: 'negative',
     title: 'Desenvolvimento de site',
     amount: 'R$ 12.000,00',
     category: {

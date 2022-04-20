@@ -22,7 +22,10 @@ export function TransactionCard({ data }: Props) {
   return (
     <Container>
       <Title>{data.title}</Title>
-      <Amount>R$ 12.000,00</Amount>
+      <Amount type={data.type}>
+        {data.type === 'negative' && '-'}
+        {data.amount}
+      </Amount>
       <Footer>
         <Category>
           <Icon name="dollar-sign" />
