@@ -24,6 +24,12 @@ export const Title = styled.Text`
 `;
 
 export const Icon = styled(Feather)`
+  color: ${({ theme, name }) =>
+    name === 'dollar-sign'
+      ? theme.colors.text
+      : name === 'arrow-down-circle'
+      ? theme.colors.attention
+      : theme.colors.success};
   font-size: ${RFValue(40)}px;
 `;
 
