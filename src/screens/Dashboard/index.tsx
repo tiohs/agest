@@ -21,6 +21,7 @@ import {
 export interface DataListProps extends TransactionCardProps {
   id: number;
 }
+
 const data: DataListProps[] = [
   {
     id: 1,

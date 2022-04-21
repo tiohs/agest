@@ -4,7 +4,7 @@ import { getStatusBarHeight, getBottomSpace } from 'react-native-iphone-x-helper
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 
-import { DataListProps } from '.';
+import { DataListProps } from './index';
 
 export const Container = styled.View`
   flex: 1;
