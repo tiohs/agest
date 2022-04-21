@@ -15,7 +15,7 @@ import {
   HighlightCards,
   Transactions,
   Title,
-  TransactionList
+  TransactionsList
 } from './styles';
 
 export interface DataListProps extends TransactionCardProps {
@@ -95,7 +95,7 @@ export function Dashboard() {
       </HighlightCards>
       <Transactions>
         <Title>Listagem</Title>
-        <TransactionList
+        <TransactionsList
           data={data}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => <TransactionCard data={item} />}
