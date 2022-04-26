@@ -17,7 +17,7 @@ const icon = {
 
 export function HighlightCard({ type, title, amount, lastTransaction }: Props) {
   return (
-    <Container>
+    <Container type={type}>
       <Header>
         <Title>{title}</Title>
         <Icon name={icon[type]} type={type} />
