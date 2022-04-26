@@ -3,11 +3,13 @@ import React from 'react';
 import { Container, Header, Title, Icon, Footer, Amount, LastTransaction } from './styled';
 
 interface Props {
+  type: string;
   title: string;
   amount: string;
   lastTransaction: string;
 }
-export function HighlightCard({ type, title, amount, lastTransactions }) {
+
+export function HighlightCard({ type, title, amount, lastTransaction }: Props) {
   return (
     <Container>
       <Header>
@@ -16,7 +18,7 @@ export function HighlightCard({ type, title, amount, lastTransactions }) {
       </Header>
       <Footer>
         <Amount>{amount}</Amount>
-        <LastTransaction>{lastTransactions}</LastTransaction>
+        <LastTransaction>{lastTransaction}</LastTransaction>
       </Footer>
     </Container>
   );
