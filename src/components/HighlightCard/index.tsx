@@ -2,6 +2,11 @@ import React from 'react';
 
 import { Container, Header, Title, Icon, Footer, Amount, LastTransaction } from './styled';
 
+interface Props {
+  title: string;
+  amount: string;
+  lastTransaction: string;
+}
 export function HighlightCard({ type, title, amount, lastTransactions }) {
   return (
     <Container>
