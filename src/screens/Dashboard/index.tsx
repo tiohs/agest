@@ -77,19 +77,19 @@ export function Dashboard() {
         <HighlightCard
           type="up"
           title="Entradas"
-          amount="R$ 17.400,00"
+          amount="AOA 17.400,00"
           lastTransaction="Última entrada dia 13 de Abril"
         />
         <HighlightCard
           type="down"
           title="Saídas"
-          amount="R$ 1.259,00"
+          amount="AOA 1.259,00"
           lastTransaction="Última entrada dia 03 de Abril"
         />
         <HighlightCard
           type="total"
           title="Total"
-          amount="R$ 16.400,00"
+          amount="AOA 16.400,00"
           lastTransaction="01 à 16 de abril"
         />
       </HighlightCards>
