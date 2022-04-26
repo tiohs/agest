@@ -1,7 +1,9 @@
 import { Feather } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
-import styled from 'styled-components/native';
-
+import styled, { css } from 'styled-components/native';
+interface IconProps {
+  type: 'up' | 'down' | 'total';
+}
 export const Container = styled.View`
   background-color: ${({ theme }) => theme.colors.shape};
   width: ${RFValue(300)}px;
@@ -23,14 +25,23 @@ export const Title = styled.Text`
   color: ${({ theme }) => theme.colors.text_dark};
 `;
 
-export const Icon = styled(Feather)`
-  color: ${({ theme, name }) =>
-    name === 'dollar-sign'
-      ? theme.colors.text
-      : name === 'arrow-down-circle'
-      ? theme.colors.attention
-      : theme.colors.success};
+export const Icon = styled(Feather)<IconProps>`
   font-size: ${RFValue(40)}px;
+  ${(props) =>
+    props.type === 'up' &&
+    css`
+      color: ${({ theme }) => theme.colors.success};
+    `};
+  ${(props) =>
+    props.type === 'down' &&
+    css`
+      color: ${({ theme }) => theme.colors.attention};
+    `};
+  ${(props) =>
+    props.type === 'total' &&
+    css`
+      color: ${({ theme }) => theme.colors.shape};
+    `};
 `;
 
 export const Footer = styled.View``;
