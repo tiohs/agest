@@ -11,7 +11,7 @@ export const Container = styled.TouchableOpacity`
 
 export const Text = styled.Text`
   font-family: ${({ theme }) => theme.fonts.medium};
-  font-size: ${RFValue(14)}px;
+  font-size: ${RFValue(16)}px;
 
   color: ${({ theme }) => theme.colors.shape};
   padding: 18px;
