@@ -24,5 +24,11 @@ export const Title = styled.Text`
 `;
 
 export const Form = styled.View`
+  flex: 1;
+  justify-content: space-between;
   margin: 24px;
+
+  padding: 24px;
 `;
+
+export const Fields = styled.View``;
