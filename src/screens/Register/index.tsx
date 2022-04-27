@@ -1,11 +1,13 @@
 import React from 'react';
 
-import { Container, Text } from './styles';
+import { Container, Header, Title } from './styles';
 
 export function Register() {
   return (
     <Container>
-      <Text>Ola mundo</Text>
+      <Header>
+        <Title>Cadastro</Title>
+      </Header>
     </Container>
   );
 }

@@ -8,7 +8,8 @@ import AppLoading from 'expo-app-loading';
 import { ThemeProvider } from 'styled-components';
 
 import theme from './global/theme';
-import { Dashboard } from './screens/Dashboard';
+// import { Dashboard } from './screens/Dashboard';
+import { Register } from './screens/Register';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -21,7 +22,7 @@ export default function App() {
   }
   return (
     <ThemeProvider theme={theme}>
-      <Dashboard />
+      <Register />
     </ThemeProvider>
   );
 }
