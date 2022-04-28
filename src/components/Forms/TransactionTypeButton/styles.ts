@@ -3,8 +3,11 @@ import { TouchableOpacity } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 
+interface iconProps {
+  type: 'up' | 'down';
+}
 export const Container = styled(TouchableOpacity)`
-  width: 100%;
+  width: 48%;
 
   flex-direction: row;
   align-items: center;
@@ -12,7 +15,7 @@ export const Container = styled(TouchableOpacity)`
 
   border: 1.5px solid ${({ theme }) => theme.colors.text};
   border-radius: 5px;
-  padding: 16px 59px;
+  padding: 16px;
 `;
 
 export const Title = styled.Text`
@@ -20,7 +23,8 @@ export const Title = styled.Text`
   font-size: ${RFValue(16)}px;
 `;
 
-export const Icon = styled(Feather)`
+export const Icon = styled(Feather)<iconProps>`
   font-size: ${RFValue(26)}px;
   margin-right: 12px;
+  color: ${({ theme, type }) => (type == 'up' ? theme.colors.success : theme.colors.attention)};
 `;
