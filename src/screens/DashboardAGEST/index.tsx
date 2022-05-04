@@ -80,11 +80,16 @@ export function Dashboard() {
           amount="AOA 17.400,00"
           lastTransaction="Última entrada dia 13 de Abril"
         />
-        <HighlightCard type="down" title="Users" amount="12" lastTransaction="Usuários" />
+        <HighlightCard
+          type="down"
+          title="Saídas"
+          amount="AOA 1.259,00"
+          lastTransaction="Última entrada dia 03 de Abril"
+        />
         <HighlightCard
           type="total"
-          title="Total de Arquivos"
-          amount="16.400"
+          title="Total"
+          amount="AOA 16.400,00"
           lastTransaction="01 à 16 de abril"
         />
       </HighlightCards>

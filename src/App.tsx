@@ -9,7 +9,8 @@ import { ThemeProvider } from 'styled-components';
 
 import theme from './global/theme';
 // import { Dashboard } from './screens/Dashboard';
-import { Register } from './screens/Register';
+// import { Register } from './screens/Register';
+import { RegisterAccount } from './screens/RegisterAccount';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -22,7 +23,7 @@ export default function App() {
   }
   return (
     <ThemeProvider theme={theme}>
-      <Register />
+      <RegisterAccount />
     </ThemeProvider>
   );
 }
