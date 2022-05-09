@@ -18,7 +18,6 @@ export function RegisterAccount() {
           <Input placeholder="Morada" />
           <Input placeholder="NIF / BI" />
           <Input placeholder="Contacto" />
-          <Input placeholder="Morada" />
         </Fields>
 
         <Button title="Enviar" />
